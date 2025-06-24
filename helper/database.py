@@ -134,7 +134,6 @@ class Database:
             return None
 
     async def get_metadata(self, user_id):
-    async def get_metadata(self, user_id):
         user = await self.col.find_one({'_id': int(user_id)})
         return user.get('metadata', "Off")
 
