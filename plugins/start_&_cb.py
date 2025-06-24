@@ -33,7 +33,7 @@ async def start(client, message: Message):
             InlineKeyboardButton("• ᴍʏ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs •", callback_data='help')
         ],
         [
-            InlineKeyboardButton('• Jᴏɪɴ Cʜᴀɴɴᴇʟs', url='https://t.me/AnimeNexusNetwork/158'),
+            InlineKeyboardButton('• ᴍᴏʀᴇ ᴄʜᴀɴɴᴇʟs', url='https://t.me/AnimeNexusNetwork/158'),
             InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ •', url='https://t.me/EternalsHelplineBot')
         ],
         [
