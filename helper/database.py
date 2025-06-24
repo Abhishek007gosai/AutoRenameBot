@@ -134,6 +134,7 @@ class Database:
             return None
 
     async def get_metadata(self, user_id):
+    async def get_metadata(self, user_id):
         user = await self.col.find_one({'_id': int(user_id)})
         return user.get('metadata', "Off")
 
@@ -170,7 +171,7 @@ class Database:
 
     async def get_subtitle(self, user_id):
         user = await self.col.find_one({'_id': int(user_id)})
-        return user.get('subtitle', "Animes_Eternals'")
+        return user.get('subtitle', "Animes_Eternals")
 
     async def set_subtitle(self, user_id, subtitle):
         await self.col.update_one({'_id': int(user_id)}, {'$set': {'subtitle': subtitle}})
