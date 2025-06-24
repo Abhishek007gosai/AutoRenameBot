@@ -7,10 +7,10 @@ class Config(object):
     # pyro client config
     API_ID    = os.environ.get("API_ID", "23537462")
     API_HASH  = os.environ.get("API_HASH", "c9599a5aa61ee8ca4f5e778d20c61f24")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "736532225-w") 
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "0") 
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME","Cluster0")     
+    DB_NAME = os.environ.get("DB_NAME","cluster0")     
     DB_URL  = os.environ.get("DB_URL","")
     PORT = os.environ.get("PORT", "8080")
  
@@ -18,9 +18,9 @@ class Config(object):
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/29a3acbbab9de5f45a5fe.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '7654385403').split()]
-    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', '').split(',')
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
-    DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", ""))
+    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'AnimeNexusNetwork').split(',')
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002456565415"))
+    DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", "-1002734211536"))
     
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
