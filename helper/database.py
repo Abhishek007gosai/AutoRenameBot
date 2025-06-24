@@ -156,7 +156,7 @@ class Database:
 
     async def get_artist(self, user_id):
         user = await self.col.find_one({'_id': int(user_id)})
-        return user.get('artist', 'Animes_Eternals'')
+        return user.get('artist', 'Animes_Eternals')
 
     async def set_artist(self, user_id, artist):
         await self.col.update_one({'_id': int(user_id)}, {'$set': {'artist': artist}})
