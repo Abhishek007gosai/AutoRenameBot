@@ -71,7 +71,7 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("• ᴍʏ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs •", callback_data='help')],
-                [InlineKeyboardButton('• Jᴏɪɴ Cʜᴀɴɴᴇʟs', url='https://t.me/AnimeNexusNetwork/158'), InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ •', url='https://t.me/EternalsHelplineBot')],
+                [InlineKeyboardButton('• ᴍᴏʀᴇ ᴄʜᴀɴɴᴇʟs', url='https://t.me/AnimeNexusNetwork/158'), InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ •', url='https://t.me/EternalsHelplineBot')],
                 [InlineKeyboardButton('• ᴀʙᴏᴜᴛ', callback_data='about'), InlineKeyboardButton('sᴏᴜʀᴄᴇ •', callback_data='source')]
             ])
         )
@@ -161,7 +161,7 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("• sᴜᴘᴘᴏʀᴛ", url='https://t.me/AnimeNexusNetwork'), InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅs •", callback_data="help")],
-                [InlineKeyboardButton("• Jᴏɪɴ Cʜᴀɴɴᴇʟs", url='https://t.me/AnimeNexusNetwork/158'), InlineKeyboardButton("ɴᴇᴛᴡᴏʀᴋ •", url='https://t.me/AnimeNexusNetwork')],
+                [InlineKeyboardButton("• ᴍᴏʀᴇ ᴄʜᴀɴɴᴇʟs", url='https://t.me/AnimeNexusNetwork/158'), InlineKeyboardButton("ɴᴇᴛᴡᴏʀᴋ •", url='https://t.me/AnimeNexusNetwork')],
                 [InlineKeyboardButton("• ʙᴀᴄᴋ •", callback_data="home")]
             ])
         )
